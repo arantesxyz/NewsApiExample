@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <title>Noticias</title>
+    </head>
+
+    <body onload="load()">
+        <div class="container">
+            <input
+                id="search"
+                type="text"
+                onchange="load()"
+                placeholder="Digite algo para pesquisar"
+            />
+            <br />
+
+            <section class="headlines">
+                <h1 class="title">Headlines</h1>
+                <div id="headlines-content" class="content">
+                    <!-- START TEMPLATE
+                    <div class="headline">
+                    <h2>Título top</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio perferendis, fugit ratione quod atque amet
+                        aspernatur, a quae deleniti adipisci nostrum debitis,
+                        voluptas optio.
+                    </p>
+                    <img src="url" />
+                </div>
+                END TEMPLATE -->
+                </div>
+            </section>
+
+            <section class="news">
+                <h1 class="title">News</h1>
+                <div id="news-content" class="content">
+                    <!-- START TEMPLATE
+                    <div class="news">
+                    <h2>Título top</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio perferendis, fugit ratione quod atque amet
+                        aspernatur, a quae deleniti adipisci nostrum debitis,
+                        voluptas optio.
+                    </p>
+                    <img src="url" />
+                </div>
+                END TEMPLATE -->
+                </div>
+            </section>
+        </div>
+
+        <script src="js/helper.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
