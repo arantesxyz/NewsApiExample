@@ -18,7 +18,10 @@ async function request(endpoint) {
     );
 }
 
-// This is actually returning the amount of articles
+/**
+ * Check if it's a valid array and return the amount of articles
+ * @param {Array} arr Array to check
+ */
 function isValidArray(arr) {
     return arr && Array.isArray(arr) && arr.length;
 }
