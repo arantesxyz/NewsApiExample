@@ -1,0 +1,42 @@
+body {
+    background: #d8dde2;
+}
+
+img {
+    max-width: 50px;
+}
+
+.wrapper {
+    margin-top: 40px;
+}
+
+.content {
+    /* background: red; */
+    margin-top: 10px;
+}
+
+.sidebar {
+    background: #ececec;
+}
+
+.saved-search {
+    margin: 0 2px;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.headlines {
+    justify-content: space-between;
+    padding: 30px 0;
+    background: #ececec;
+}
+
+.news {
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 18px;
+}

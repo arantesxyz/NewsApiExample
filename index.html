@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notícias top</title>
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./assets/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Nav -->
+            <nav class="row">
+                <h1 class="title col-sm-6">Notícias Top</h1>
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    onchange="loadNews()"
+                    placeholder="Pesquisar"
+                />
+            </nav>
+
+            <!-- Wrapper -->
+            <main class="row wrapper">
+                <section class="content col-sm-7">
+                    <!-- Content tile -->
+                    <div class="info row">
+                        <h1 class="title">
+                            Pesquisa: <span id="queryName">{name}</span>
+                        </h1>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary margin-left-auto"
+                            onclick="salvarFavorito()"
+                        >
+                            Salvar
+                        </button>
+                    </div>
+
+                    <!-- Headlines -->
+                    <article id="headlines" class="headlines row">
+                        <div class="card col-sm-5">
+                            <img src="" alt="" />
+                            <div class="description">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-5">
+                            <img src="" alt="" />
+                            <div class="description">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News -->
+                    <article id="news" class="news row">
+                        <div class="card col-sm-5">
+                            <img src="" alt="" />
+                            <div class="description">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-5">
+                            <img src="" alt="" />
+                            <div class="description">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-description">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="sidebar col-sm-4">
+                    <h3 class="subtitle">Pesquisas salvas</h3>
+                    <div id="favoritos" class="row saved-search">
+                        <button type="button" class="btn btn-secondary">
+                            {name}
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/api.js"></script>
+        <script src="./assets/favoritos.js"></script>
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
